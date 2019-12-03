@@ -124,3 +124,9 @@ let header = document.querySelector("header");
 header.addEventListener("click", () => header.style.backgroundColor = "#FFCC99")
 
 // stop navigation items from refreshing page
+let links = document.querySelectorAll("nav a");
+
+for (let i = 0; i < links.length; i++)
+{
+    links[i].addEventListener("click", (event) => { event.preventDefault(); });
+}
